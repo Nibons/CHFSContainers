@@ -15,7 +15,7 @@ install:
 
 build: false
 
-branch:
+branches:
   only:
    - live
    - test

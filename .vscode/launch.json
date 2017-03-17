@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "PowerShell",
+            "request": "launch",
+            "name": "PowerShell Launch (current file)",
+            "script": "${file}",
+            "args": [],
+            "cwd": "${file}"
+        },
+        {
+            "type": "PowerShell",
+            "request": "attach",
+            "name": "PowerShell Attach to Host Process",
+            "processId": "${command:PickPSHostProcess}",
+            "runspaceId": 1
+        },
+        {
+            "type": "PowerShell",
+            "request": "launch",
+            "name": "PowerShell Interactive Session",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "PowerShell",
+            "request": "launch",
+            "name": "CHFSContainerImageManagement",
+            "cwd": "${workspaceRoot}/Tests/",
+            "script": "CHFSContainerImageManagement.tests.ps1"
+        },
+        {
+            "type": "PowerShell",
+            "request": "launch",
+            "name": "CHFSContainerServerManagement",
+            "cwd": "${workspaceRoot}/Tests/",
+            "script": "CHFSContainerServerManagement.tests.ps1"
+        },
+        {
+            "type": "PowerShell",
+            "request": "launch",
+            "name": "CHFSSetup",
+            "cwd": "${workspaceRoot}/Tests/",
+            "script": "CHFSSetup.tests.ps1"
+        }
+    ]
+}

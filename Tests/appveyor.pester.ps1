@@ -43,7 +43,7 @@ param(
     If($Finalize)
     {
         #Show status...
-            $AllFiles = Get-ChildItem -Path $ProjectRoot\PesterResults*.xml | select-object-ExpandProperty FullName
+            $AllFiles = Get-ChildItem -Path $ProjectRoot\PesterResults*.xml | select-object -ExpandProperty FullName
             "`n`tSTATUS: Finalizing results`n"
             "COLLATING FILES:`n$($AllFiles | Out-String)"
 
@@ -51,14 +51,14 @@ param(
             $Results = @( Get-ChildItem -Path "$ProjectRoot\PesterResults_PS*.xml" | Import-Clixml )
             
             $FailedCount = $Results |
-                select-object-ExpandProperty FailedCount |
+                select-object -ExpandProperty FailedCount |
                 Measure-Object -Sum |
-                select-object-ExpandProperty Sum
+                select-object -ExpandProperty Sum
     
             if ($FailedCount -gt 0) {
 
                 $FailedItems = $Results |
-                    select-object-ExpandProperty TestResult |
+                    select-object -ExpandProperty TestResult |
                     Where-object {$_.Passed -notlike $True}
 
                 "FAILED TESTS SUMMARY:`n"

@@ -15,6 +15,11 @@ install:
 
 build: false
 
+branch:
+  only:
+   - live
+   - test
+
 test_script:
 # Test with native PS version
   - ps: . .\Tests\appveyor.pester.ps1 -Test -Finalize

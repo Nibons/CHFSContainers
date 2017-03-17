@@ -4,12 +4,9 @@ $repositoryRoot = Split-Path -parent -Path $here
 $module_Root = "$repositoryRoot\CHFSContainerServerManagement"
 import-module $module_Root -Force
 
-Describe 'invokes pester tests' {
-    Context 'it will pass'{
-        docker system info | 2>&1
+Describe 'ServerImages' {
         $images = docker image ls -q microsoft/windowsservercore 
         it 'test client has the win2016 image we need'{
             $images | should be 'b4713e4d8bab'
-        }        
-    }    
+        }            
 }

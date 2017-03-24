@@ -1,1 +1,2 @@
-CHFSContainerImageManagement/Bin/*
+CHFSContainerImageManagement/Bin/chfsrootcontainerimage/CHFSSetup
+CHFSContainerImageManagement/Bin/chfsrootcontainerimage/iis/wp/WindowsFeatureSources.tar.gz

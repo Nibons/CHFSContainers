@@ -8,7 +8,7 @@ Param(
 )
 $parentImage = 'iis'
 if(!(docker image ls -q $parentImage)){
-    . "..\make-image.ps1"
+    . "$(split-path -parent $psscriptroot)\make-image.ps1"
 }
 $dockerbuild = ""
 
@@ -36,4 +36,4 @@ find-BuildArtifacts -buildNumber $buildNumber -type Package | Copy-Item -Destina
 
 #build the image
 $context_Directory = "$(split-path -parent $stagingDirectory.fullname)\$($stagingDirectory.name)"
-docker build --build-arg logicalEnvironment=$logicalEnvironment --build-arg track=wp -t wp $context_Directory | foreach-object {write-verbose -Message $_}
+build-dockerimage -context $context_Directory -buildArg @{logicalEnvironment=$logicalEnvironment;track='wp' } -tag wp,wp:latest

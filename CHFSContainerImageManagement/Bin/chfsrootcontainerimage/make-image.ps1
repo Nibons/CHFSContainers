@@ -8,4 +8,5 @@ Param(
 if($force.IsPresent){
     $flag_rebuild = "--no-cache=true"
 }
-docker build $flag_rebuild $flag_tag -t chfsrootcontainerimage $context | foreach-object {write-verbose -message $_}
+#docker build $flag_rebuild $flag_tag -t chfsrootcontainerimage $context | foreach-object {write-verbose -message $_}
+build-dockerimage -context $context -tag chfsrootcontainerimage -nocache:$($force.IsPresent)

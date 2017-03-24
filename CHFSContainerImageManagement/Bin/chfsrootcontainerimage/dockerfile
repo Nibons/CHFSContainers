@@ -1,5 +1,5 @@
 #this dockerfile describes the root image that all chfs images inherit from
-FROM microsoft/windowsservercore:latest
+FROM microsoft/windowsservercore
 
 SHELL ["powershell","-executionpolicy unrestricted -command"]
 

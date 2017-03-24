@@ -2,7 +2,7 @@
 
 ## Notes:
 ### there are a few NTFS links used in this process:
-Source | Points to | Type
+Link | Points to | Type
 ------ | --------- | ----
 /CHFSContainerImageManagement/Bin/chfsrootcontainerimage/CHFSSetup | /CHFSSetup | directory link
 /CHFSContainerImageManagement/Bin/chfsrootcontainerimage/iis/wp/WindowsFeatureSources.tar.gz | /CHFSContainerImageManagement/lib/WindowsFeatureSources.tar.gz | file link

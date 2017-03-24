@@ -26,21 +26,30 @@
             "request": "launch",
             "name": "CHFSContainerImageManagement",
             "cwd": "${workspaceRoot}/Tests/",
-            "script": "CHFSContainerImageManagement.tests.ps1"
+            "script": "${workspaceRoot}/Tests/CHFSContainerImageManagement.tests.ps1",
+            "args": [
+                "-verbose"
+            ]
         },
         {
             "type": "PowerShell",
             "request": "launch",
             "name": "CHFSContainerServerManagement",
             "cwd": "${workspaceRoot}/Tests/",
-            "script": "CHFSContainerServerManagement.tests.ps1"
+            "script": "${workspaceRoot}/Tests/CHFSContainerServerManagement.tests.ps1",
+            "args": [
+                "-verbose"
+            ]
         },
         {
             "type": "PowerShell",
             "request": "launch",
             "name": "CHFSSetup",
             "cwd": "${workspaceRoot}/Tests/",
-            "script": "CHFSSetup.tests.ps1"
+            "script": "${workspaceRoot}/Tests/CHFSSetup.tests.ps1",
+            "args": [
+                "-verbose"
+            ]
         }
     ]
 }

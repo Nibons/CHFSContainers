@@ -1,5 +1,5 @@
-$Public  = @( Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -ErrorAction SilentlyContinue )
-$Private = @( Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -ErrorAction SilentlyContinue )
+$Public  = @( Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -ErrorAction SilentlyContinue | where-object -property Name -notmatch 'tests')
+$Private = @( Get-ChildItem -Path $PSScriptRoot\Private\*.ps1 -ErrorAction SilentlyContinue  | where-object -property Name -notmatch 'tests')
 
 foreach($import in @($Public + $Private))
 {
@@ -12,5 +12,8 @@ foreach($import in @($Public + $Private))
         Write-Error -Message "Failed to import function $($import.fullname): $_"
     }
 }
+
+#set the docker host to our docker build server
+$env:docker_host = (get-buildvariable -name 'docker_host')
 
 Export-ModuleMember -Function $Public.Basename

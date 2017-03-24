@@ -1,0 +1,16 @@
+#this dockerfile describes the root image that all chfs images inherit from
+FROM microsoft/windowsservercore:latest
+
+SHELL ["powershell","-executionpolicy unrestricted -command"]
+
+#install package providers
+RUN invoke-webrequest -uri https://chocolatey.org/install.ps1 -UseBasicParsing | invoke-expression ;\        
+    Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force ;\
+    install-module ChocolateyGet -force ;\
+    install-PackageProvider -name ChocolateyGet -force 
+
+RUN choco install git, msdeploy3 -y
+
+COPY CHFSSetup c:\\CHFSSetup
+
+CMD ["powershell.exe"]

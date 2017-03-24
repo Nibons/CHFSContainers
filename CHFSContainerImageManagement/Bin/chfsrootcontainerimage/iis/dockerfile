@@ -1,0 +1,22 @@
+FROM chfsrootcontainerimage
+
+EXPOSE 80 443
+
+WORKDIR C:\\ContentSource
+
+ONBUILD COPY . C:\\ContentSource
+
+#run the xmlPreprocess
+ONBUILD RUN import-module C:\CHFSWebSetup\CHFSWebSetup.psd1 -verbose ;\
+    invoke-xmlPreprocess -infile $(get-childitem -path C:\ContentSource\*.setParameters.xml).FullName \
+        -logicalEnvironment $env:logicalEnvironment \
+        -SettingsSpreadsheet 'C:\ContentSource\SettingsSpreadsheet.xml' ;\
+    
+    #sets up the websites
+    invoke-CHFSWebSetup -logicalEnvironment $env:logicalEnvironment -track $env:track ;\
+
+    #invokes the msbuild tasks
+    invoke-item -path $(get-item -path C:\ContentSource\*.deploy.cmd | select-object -expandproperty Fullname) ;\
+
+    #removes the source directory from the final image
+    remove-item -path C:\ContentSource -recurse

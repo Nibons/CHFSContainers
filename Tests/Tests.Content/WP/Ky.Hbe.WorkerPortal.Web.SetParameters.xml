@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="${APP.DNS}" />
+  <setParameter name="SSOSessionTimeout" value="${SignoutUrl}" />
+  <setParameter name="RouterPageURL" value="${RouterPageURL}" />
+  <setParameter name="Audience URL" value="https://${APP.DNS}/" />
+  <setParameter name="authority" value="${authority}" />
+  <setParameter name="thumbprint" value="${thumbprint}" />
+  <setParameter name="validIssuers" value="${authority}" />
+  <setParameter name="wsFederationissuer" value="${Issuer}" />
+  <setParameter name="wsFederationrealm" value="https://${APP.DNS}/" />
+  <setParameter name="Document Connection String" value="${Document Connection String}" />
+  <setParameter name="DocumentEntities" value="${DocumentEntities}" />
+  <setParameter name="ScreenDriverEntities" value="${ScreenDriverEntities}" />
+  <setParameter name="Interface Connection String" value="${Interface Connection String}" />
+  <setParameter name="RFI Details Update String" value="${RFI Details Update String}" />
+  <setParameter name="default" value="${default}" />
+  <setParameter name="Ref Table DB ConnectionString" value="${Ref Table DB Connection String}" />
+  <setParameter name="WP ConnectionString" value="${WP Connection String}" />
+  <setParameter name="IEEntities" value="${IEEntities}" />
+  <setParameter name="CaseDataChangeEntities" value="${CaseDataChangeEntities}" />
+  <setParameter name="PMBConnectionString" value="${PMBConnectionString}" />
+  <setParameter name="KYHBEEntities" value="${KYHBEEntities}" />
+  <setParameter name="Form1095BConnectionString" value="${Form1095BConnectionString}" />
+  <setParameter name="FTIPmbDbConnString" value="${FTIPmbDbConnString}" />
+  <setParameter name="DataChangeEntities" value="${DataChangeEntities}" />
+  <setParameter name="InterfaceBoConn" value="${InterfaceBoConn}" />
+  <setParameter name="InterfaceAHIConnectionString" value="${InterfaceAHIConnectionString}" />
+  <setParameter name="LoggingConnString" value="${LoggingConnString}" />
+  <setParameter name="PartnerPortalConnString" value="${PartnerPortalConnString}" />
+  <setParameter name="TaskAPIEntities" value="${TaskAPIEntities}" />
+  <setParameter name="ProcessDocumentFromDMSFilePath" value="${ProcessDocumentFromDMSFilePath}" />
+  <setParameter name="KYHBESCEDBCApprovalEntities" value="${KYHBESCEDBCApprovalEntities}" />
+  <setParameter name="ChildCareEnrollmentEntities" value="${ChildCareEnrollmentEntities}" />
+  <setParameter name="Interfaces.KICCSConnString" value="${Interfaces.KICCSConnString}" />
+  <setParameter name="DatabaseConnString" value="${DatabaseConnString}" />
+  <setParameter name="PPEConnectionString" value="${PPEConnectionString}" />
+  <setParameter name="SspDbConnectionString" value="${SspDbConnectionString}" />
+  <setParameter name="PresentationString" value="${PresentationString}" />
+  <setParameter name="MemberManagementEntities" value="${MemberManagementEntities}" />
+  <setParameter name="PMConnectionString" value="${PMConnectionString}" />
+  <setParameter name="ManagedCareKyhbeConnectionString" value="${ManagedCareKyhbeConnectionString}" />
+  <setParameter name="KYHBECorrsPreProcessorEntities" value="${KYHBECorrsPreProcessorEntities}" />
+  <setParameter name="WebIntegrationEntities" value="${WebIntegrationEntities}" />
+  <setParameter name="CoverSheetURL" value="${CoverSheetURL}" />
+  <setParameter name="DisableVirusScan" value="${WP.DisableVirusScan}" />
+  <setParameter name="Silverlight_ApplicationId" value="${Silverlight_ApplicationId}" />
+  <setParameter name="Silverlight_EnablePropertySelectivePersistence" value="${Silverlight_EnablePropertySelectivePersistence}" />
+  <setParameter name="Silverlight_ShowVoiceSignatureButton" value="${Silverlight_ShowVoiceSignatureButton}" />
+  <setParameter name="Silverlight CallSsaCompositeApplicationRegistration" value="${Silverlight CallSsaCompositeApplicationRegistration}" />
+  <setParameter name="Silverlight CallSsaCompositeDataCollection" value="${Silverlight CallSsaCompositeDataCollection}" />
+  <setParameter name="Enable App Fabric" value="${WP Enable App Fabric}" />
+  <setParameter name="LogFilterApp" value="${LogFilterApp}" />
+  <setParameter name="Kames File Path" value="${Kames File Path}" />
+  <setParameter name="Ref Tables Cache Name" value="${Ref Tables Cache Name}" />
+  <setParameter name="Silverlight Is View Dirty Check Enabled" value="${Silverlight Is View Dirty Check Enabled}" />
+  <setParameter name="Silverlight Enable Access Rights Caching" value="${Silverlight Enable Access Rights Caching}" />
+  <setParameter name="Silverlight Enable Next Button Shortcut Key" value="${Silverlight Enable Next Button Shortcut Key}" />
+  <setParameter name="MockMCICalls" value="${MockMCICalls}" />
+  <setParameter name="Silverlight_ThrowInterfaceExceptionsEnabled" value="${Silverlight_ThrowInterfaceExceptionsEnabled}" />
+  <setParameter name="Silverlight_ShowQualityControlUrl" value="${Silverlight_ShowQualityControlUrl}" />
+  <setParameter name="EWSUserName" value="${EWSUserName}" />
+  <setParameter name="EWSPassword" value="${EWSPassword}" />
+  <setParameter name="CGI URL" value="${kyshop.url}" />
+  <setParameter name="Anon Shop URL" value="${Anon Shop URL}" />
+  <setParameter name="ShoppingPageUrl" value="${Ky Shop URL}" />
+  <setParameter name="Form1095BUrl" value="${Ky Form1095 URL}" />
+  <setParameter name="Indiv Shop URL" value="${Indiv Shop URL}" />
+  <setParameter name="Employee Shop URL" value="${Employee Shop URL}" />
+  <setParameter name="Hcentive Shop URL" value="${Hcentive Shop URL}" />
+  <setParameter name="XmlMetadataPath" value="${XmlMetadataPath}" />
+  <setParameter name="Destination Directory Path" value="${Destination Directory Path}" />
+  <setParameter name="Federation Metadata Location" value="${Federation Metadata Location}" />
+  <setParameter name="Issuer" value="${Issuer}" />
+  <setParameter name="Provider Selection" value="${Provider Selection}" />
+  <setParameter name="Corticon Home Folder" value="\\Server\Corticon\Bin\" />
+  <setParameter name="SignoutUrl" value="${SignoutUrl}" />
+  <setParameter name="SSRSLibrary" value="${SSRSLibrary}" />
+  <setParameter name="R5SSRSLibrary" value="${R5SSRSLibrary}" />
+  <setParameter name="WP Silverlight Release Version" value="${WP Silverlight Release Version}" />
+  <setParameter name="WP Silverlight Bypass Validation On Eligibility Summary" value="${WP Silverlight Bypass Validation On Eligibility Summary}" />
+  <setParameter name="ShowCDCSectionsOnRunEligibility" value="${ShowCDCSectionsOnRunEligibility}" />
+  <setParameter name="GenerateXMLSelectively" value="${GenerateXMLSelectively}" />
+  <setParameter name="GenerateNavigatorFromData" value="${GenerateNavigatorFromData}" />
+  <setParameter name="EnableScreenNavigationTime" value="${EnableScreenNavigationTime}" />
+  <setParameter name="WebServicePWD" value="${WebServicePWD}" />
+  <setParameter name="WebServiceUserDomain" value="${WebServiceUserDomain}" />
+  <setParameter name="WebServiceUserName" value="${WebServiceUserName}" />
+  <setParameter name="SSRSSite2005" value="${SSRSSite2005}" />
+  <setParameter name="R5SSRSSite2005" value="${R5SSRSSite2005}" />
+  <setParameter name="HearingDocumentsPath" value="${Correspondence.HearingDocumentsPath}" />
+  <setParameter name="SubmissionURL" value="${SubmissionURL}" />
+  <setParameter name="WP Silverlight MCI Overlay Status Bypass Enabled" value="${WP Silverlight MCI Overlay Status Bypass Enabled}" />
+  <setParameter name="WP XmlSerializerLogEnabled" value="${WP XmlSerializerLogEnabled}" />
+  <setParameter name="WCMUrl" value="https://${Waiver.WEB.DNS}/WebIntegration/NavigateToMWMA" />
+  <setParameter name="ServerHost" value="${Waiver.WorkflowServerHost}" />
+  <setParameter name="WorkflowUserName" value="${Waiver.WorkflowUserName}" />
+  <setParameter name="WorkflowPassword" value="${Waiver.WorkflowPassword}" />
+  <setParameter name="EnableNavigatorStoredProcedure" value="${EnableNavigatorStoredProcedure}" />
+  <setParameter name="RidpServiceAccount" value="${RidpServiceAccount}" />
+  <setParameter name="App Fabric Data Cache Client" value="${App Fabric Data Cache Client}" />
+  <setParameter name="App Fabric Data Cache Client1" value="${App Fabric Data Cache Client1}" />
+  <setParameter name="App Fabric Data Cache Client2" value="${App Fabric Data Cache Client2}" />
+  <setParameter name="AuthorizationCacheName" value="${AuthorizationCacheName}" />
+  <setParameter name="historicalRefTablesCacheName" value="${Historical Ref Tables Cache Name}" />
+  <setParameter name="NonLocalCacheNames" value="${Historical Ref Tables Cache Name}" />
+  <setParameter name="LogPPEServiceTransactions" value="${LogPPEServiceTransactions}" />
+  <setParameter name="ParallelCallsToDms" value="${ParallelCallsToDmsKey}" />
+  <setParameter name="CompilationDebug" value="${CompilationDebug}" />
+  <setParameter name="HTTP R5 EDBCDSNAP Service" value="https://${EDBC.DNS}/KYEDBC_DSNAPService/KyHbeEdbcDSNAPDriverService.svc" />
+  <setParameter name="EDBC Disposition Service" value="https://${EDBC.DNS}/KyHbeEdbcDispositionService/KyHbeEdbcDispositionService.svc" />
+  <setParameter name="HTTP R5 EDBC Service" value="https://${EDBC.DNS}/KY_EDBC_DRIVER_WCFEdbcService/KyHbeEdbcDriverService.svc" />
+  <setParameter name="Special Enrollment EDBC Service" value="https://${EDBC.DNS}/KYEDBC_SPECIALENROLLMENTService/KyHbeEdbcSpecialEnrollmentService.svc" />
+  <setParameter name="Verify Income Enpoints" value="https://${BT.FQDN}/AHIIncomeWcfService/AHIIncome.svc/" />
+  <setParameter name="Verify Current Income Enpoints" value="https://${BT.FQDN}/VCIWcfService/VCIService.svc/" />
+  <setParameter name="isAhiPerf" value="${isAhiPerf}" />
+  <setParameter name="ShowTimelyUntimelyCBOnRunEligibility" value="${ShowTimelyUntimelyCBOnRunEligibility}" />
+  <setParameter name="Verify Claims service" value="https://${DMS DNS}/ClaimService/ClaimsService.svc/" />
+  <setParameter name="MaxAPTC Service" value="https://${BT.FQDN}/CalculateMaxAPTCWcfService/CalculateMaxAPTCService.svc" />
+  <setParameter name="SSA Composite Endpoint" value="${SSACompositeEndpoint}" />
+  <setParameter name="OETWorkReg" value="https://${BT.FQDN}/OETWorkRegistration/OETService.svc?wsdl" />
+  <setParameter name="OTISWINPayment" value="https://${BT.FQDN}/WICNoHomeContact/WICNoHomeContactSvc.svc" />
+  <setParameter name="EDRSAddEndpoint" value="https://${BT.FQDN}/EDRSAddDisqualificationSvc/EDRSAddDisqualification.svc" />
+  <setParameter name="EDRSEditEndpoint" value="https://${BT.FQDN}/EDRSEditDisqualification/EDRSEditDisqualificationSvc.svc" />
+  <setParameter name="EDRSDeleteEndpoint" value="https://${BT.FQDN}/EDRSDeleteDisqualification/EDRSDeleteDisqualificationSvc.svc" />
+  <setParameter name="EDRSQueryEndpoint" value="https://${BT.FQDN}/EDRSOnlineSearch/EDRSOnlineSearchSvc.svc" />
+  <setParameter name="EDRSContactEndpoint" value="https://${BT.FQDN}/EDRSContactDetail/EDRSContactDetailSvc.svc" />
+  <setParameter name="WICNoHomeContact Endpoint" value="https://${BT.FQDN}/WINPaymentsWcfService/WINPaymentsService.svc" />
+  <setParameter name="SOLQ Interface Endpoint" value="${SOLQ Interface Endpoint}" />
+  <setParameter name="SOLQ Standalone Interface Endpoint" value="https://${BT.FQDN}/SSASOLQStandaloneservice/SOLQStandalone.svc" />
+  <setParameter name="TMember Service Endpoint" value="${TMember Service Endpoint}" />
+  <setParameter name="VS IsAgentLoggedIn Interface Endpoint" value="${VS IsAgentLoggedIn Interface Endpoint}" />
+  <setParameter name="VS StartRecording Interface Endpoint" value="${VS StartRecording Interface Endpoint}" />
+  <setParameter name="VS StopRecording Interface Endpoint" value="${VS StopRecording Interface Endpoint}" />
+  <setParameter name="VS CancelRecording Interface Endpoint" value="${VS CancelRecording Interface Endpoint}" />
+  <setParameter name="Address Validation End Point" value="${Address Validation End Point}" />
+  <setParameter name="AutoEnrollDriverEndpoint" value="https://${MC.DNS}/ManagedCareDriver/AutoEnrollDriverService.svc" />
+  <setParameter name="Non ESIMEC EndPoint" value="https://${BT.FQDN}/NonEsiMecWcfService/NonEsiMecService.svc" />
+  <setParameter name="ESIMEC EndPoint" value="https://${BT.FQDN}/ESIMECWcfService/ESIMECService.svc" />
+  <setParameter name="VLP Endpoint" value="https://${BT.FQDN}/LawfulPresenceWcfService/LawfulPresenceService.svc" />
+  <setParameter name="VLP Submit Endpoint" value="https://${BT.FQDN}/SubmitVLPWcfService/SubmitVLPService.svc" />
+  <setParameter name="Docs Mailed to DHS" value="https://${BT.FQDN}/DocsMailedToDHSSvc/DocsMailedToDHS.svc" />
+  <setParameter name="VLP Reverify Endpoint" value="https://${BT.FQDN}/ReverifyVLPWcfService/ReverifyVLP.svc" />
+  <setParameter name="VLP CloseCase Endpoint" value="https://${BT.FQDN}/CloseCaseWcfService/CloseCaseService.svc" />
+  <setParameter name="Voter registration interface " value="https://${BT.FQDN}/VoterRegWcfService/VoterRegService.svc" />
+  <setParameter name="EmployerSearch" value="https://${SERVICES.DNS}/SharedServices/PMB/EmployerSearch.svc" />
+  <setParameter name="SelectedPlan PremiumDetails Endpoint" value="${SelectedPlan PremiumDetails Endpoint}" />
+  <setParameter name="Employee EnrollmentInfo Endpoint" value="${Employee EnrollmentInfo Endpoint}" />
+  <setParameter name="Shopping HandoffService Endpoint" value="${Shopping HandoffService Endpoint}" />
+  <setParameter name="Employee Roster Endpoint" value="${Employee Roster Endpoint}" />
+  <setParameter name="Generate Correspondence Service" value="${Generate Correspondence Service}" />
+  <setParameter name="Second Lowest Silver Plan Service" value="${Second Lowest Silver Plan Service}" />
+  <setParameter name="Agent Assister Search Service" value="${Agent Assister Search Service}" />
+  <setParameter name="Lowest Cost Employer Plan Service" value="${Lowest Cost Employer Plan Service}" />
+  <setParameter name="DC Integration Endpoint" value="https://${BRE.DNS}/SSPDCIntegrationService/SSPDCIntegrationService.svc" />
+  <setParameter name="SSPDC Integration Endpoint" value="https://${BRE.DNS}/SSPDCIntegrationService/SSPDCIntegrationService.svc" />
+  <setParameter name="MCAPSAutoAssign Endpoint" value="https://${BT.FQDN}/MCAPSAutoAssignWcfService/MCAPSAutoAssignService.svc" />
+  <setParameter name="MCAPS TerminateService" value="https://${BT.FQDN}/MCAPSAutoAssignWcfService/MCAPSTerminateService.svc" />
+  <setParameter name="Kames Endpoint" value="${KamesWebService}" />
+  <setParameter name="Task Kames Endpoint" value="${KamesWebService}" />
+  <setParameter name="MCAPS Validation Endpoint" value="https://${BT.FQDN}/MCAPSAutoAssignWcfService/MCAPSValidateService.svc" />
+  <setParameter name="Employee Roster Service" value="http://${kyshop.url}/employer/ws/selectEmployeeRoster/selectEmployeeRoster" />
+  <setParameter name="Second Lowest Silver Plan Shared Service" value="http://${Anon Shop URL}/ws/secondLowestSilverPlan/secondLowestSilverPlan" />
+  <setParameter name="Lowest Cost Employer Plan Shared Service" value="http://${kyshop.url}/employer/ws/employerLowestPlan/employerLowestPlan" />
+  <setParameter name="Individual Details Soap" value="http://${kyshop.url}/individual/ws/individualDetails/individualDetails" />
+  <setParameter name="Employee Details Service" value="http://${kyshop.url}/individual/ws/employeeDetails/employeeDetails" />
+  <setParameter name="Employee Enrollment Info Service" value="http://${kyshop.url}/employer/ws/shopResultUpdate/shopResultUpdate" />
+  <setParameter name="Payment Review Service" value="${Payment Review Service}" />
+  <setParameter name="Document Management Service" value="https://${DMS DNS}/DMS.svc" />
+  <setParameter name="MCI Service" value="${MCI Service}" />
+  <setParameter name="MCI Service For SC" value="${MCI Service}" />
+  <setParameter name="MCI Service For TM" value="${MCI Service}" />
+  <setParameter name="Ridp Service Endpoint" value="https://${RIDP.FQDN}/kogservices/RIDPStandAlone.svc" />
+  <setParameter name="clientCertificate" value="${clientCertificate}" />
+  <setParameter name="Silverlight_IsTimeTravelEnabled" value="${Silverlight_IsTimeTravelEnabled}" />
+  <setParameter name="domain" value="${WPDomainName}" />
+  <setParameter name="APP.DNS" value="DNS" />
+  <setParameter name="KYHBEManagedCareEntities" value="${KYHBEManagedCareEntities}" />
+  <setParameter name="EDBC Special Foster Care Service" value="https://${EDBC.DNS}/EDBCInterfaceEligibility/KyHbeEdbcInterfaceEligibilityService.svc" />
+  <setParameter name="EDBC Special Circumstance Approval Service" value="https://${EDBC.DNS}/EdbcManagedServices/ManagedServices.svc" />
+  <setParameter name="ViewSwitch" value="${WP.ViewSwitch}" />
+  <setParameter name="ViewsPath" value="${WP.ViewsPath}" />
+  <setParameter name="DecryptionKeyWP" value="${DecryptionKey}" />
+  <setParameter name="ValidationKeyWP" value="${ValidationKey}" />
+</parameters>

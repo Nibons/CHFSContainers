@@ -1,2 +1,3 @@
 CHFSContainerImageManagement/Bin/chfsrootcontainerimage/CHFSSetup
 CHFSContainerImageManagement/Bin/**/*WindowsFeatureSources.tar.gz
+scratch/*
